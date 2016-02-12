@@ -345,6 +345,7 @@ txt=[txt,'}'];
 
 %%-------------------------------------------------------------------------
 function txt=matlabobject2ubjson(name,item,level,varargin)
+st = struct();
 if numel(item) == 0 %empty object
     st = struct();
 else

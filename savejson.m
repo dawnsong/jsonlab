@@ -432,6 +432,7 @@ txt=sprintf('%s%s%s',txt,padding1,'}');
 
 %%-------------------------------------------------------------------------
 function txt=matlabobject2json(name,item,level,varargin)
+st = struct();
 if numel(item) == 0 %empty object
     st = struct();
 else
